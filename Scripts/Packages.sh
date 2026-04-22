@@ -84,7 +84,7 @@ UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 # 我新加的
 UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
-#UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
+UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
 
 
 #更新软件包版本
