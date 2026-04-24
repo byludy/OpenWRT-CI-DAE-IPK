@@ -93,7 +93,7 @@ echo "CONFIG_PACKAGE_luci-app-ramfree=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
-#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main" "name"
+#UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
 #echo "CONFIG_PACKAGE_luci-app-store=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 #mv luci-app-store/luci/* luci-app-store/
 
@@ -101,7 +101,7 @@ UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main"
 echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 #mv luci-app-rtp2httpd/openwrt-support/* luci-app-rtp2httpd/
 
-#UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder"
+#UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
 #echo "CONFIG_PACKAGE_luci-app-thunder=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
 
