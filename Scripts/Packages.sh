@@ -73,10 +73,10 @@ UPDATE_PACKAGE "qbittorrent" "sbwml/luci-app-qbittorrent" "master" "" "qt6base q
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
 UPDATE_PACKAGE "quickfile" "sbwml/luci-app-quickfile" "main"
 UPDATE_PACKAGE "viking" "VIKINGYFY/packages" "main" "" "luci-app-timewol luci-app-wolplus"
-#UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
+UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
 
-#UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
-#UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
+UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
+UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
 UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 
 # 只有ipk可以用
