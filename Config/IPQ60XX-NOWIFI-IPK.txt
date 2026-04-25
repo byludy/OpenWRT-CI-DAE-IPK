@@ -1,4 +1,5 @@
 CONFIG_USE_APK=n
+CONFIG_PACKAGE_luci-app-store=y
 
 CONFIG_TARGET_qualcommax=y
 CONFIG_TARGET_qualcommax_ipq60xx=y
