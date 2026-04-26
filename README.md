@@ -1,5 +1,6 @@
 \*\*修改自 ： https://github.com/davidtall/OpenWRT-CI
 
+uboot使用： https://github.com/chenxin527/uboot-ipq60xx-emmc-build/releases
 
 # OpenWRT-CI
 
