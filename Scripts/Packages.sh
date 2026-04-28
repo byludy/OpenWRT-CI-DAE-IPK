@@ -92,8 +92,9 @@ UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 
-UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main"
-echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
+#rtp2httpd 运行不了，不如直接安装apk
+#UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main"
+#echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
 #mv luci-app-rtp2httpd/openwrt-support/* luci-app-rtp2httpd/
 
 # 迅雷有问题
