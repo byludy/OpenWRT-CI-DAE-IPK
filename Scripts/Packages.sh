@@ -80,28 +80,9 @@ UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "kix"
 #UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
 UPDATE_PACKAGE "luci-app-lucky" "sirpdboy/luci-app-lucky" "main"
 
-
-
-# 只有ipk可以用
-UPDATE_PACKAGE "luci-app-store" "linkease/istore" "main"
-
-# 我新加的
-#UPDATE_PACKAGE "luci-app-netwizard" "sirpdboy/luci-app-netwizard" "main"
-#echo "CONFIG_PACKAGE_luci-app-netwizard=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
+#新加的
 UPDATE_PACKAGE "luci-app-watchdog" "sirpdboy/luci-app-watchdog" "main"
 echo "CONFIG_PACKAGE_luci-app-watchdog=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
-#rtp2httpd 运行不了，不如直接安装apk
-#UPDATE_PACKAGE "luci-app-rtp2httpd" "stackia/rtp2httpd" "main"
-#echo "CONFIG_PACKAGE_luci-app-rtp2httpd=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-#mv luci-app-rtp2httpd/openwrt-support/* luci-app-rtp2httpd/
-
-# 迅雷有问题
-#UPDATE_PACKAGE "luci-app-thunder" "byludy/luci-app-thunder" "main"
-#echo "CONFIG_PACKAGE_luci-app-thunder=y" >> $GITHUB_WORKSPACE/Config/GENERAL.txt
-
-
 
 #更新软件包版本
 UPDATE_VERSION() {
@@ -157,6 +138,8 @@ cp -r $GITHUB_WORKSPACE/package/* ./
 #修复daed/Makefile
 #rm -rf luci-app-daed/daed/Makefile && cp -r $GITHUB_WORKSPACE/patches/daed/Makefile luci-app-daed/daed/
 sed -i 's/pnpm install ; \\/pnpm install --no-frozen-lockfile ; \\/g' luci-app-daed/daed/Makefile
+sed -i 's|github.com/daeuniverse/quic-go|github.com/olicesx/quic-go|g' luci-app-daed/daed/Makefile
+
 sed -i 's|/run/i\\  procd_set_param|/procd_set_param command/i \\\tprocd_set_param|g' luci-app-daed/luci-app-daed/root/etc/init.d/luci_daed
 #cat luci-app-daed/daed/Makefile
 #修复libubox报错
